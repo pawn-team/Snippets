@@ -1,0 +1,11 @@
+# Define o comportamento de arquivos Markdown
+*.md text eol=lf # usa LF como quebra de linha para compatibilidade com Unix/Linux
+*.md diff=markdown # permite realce de sintaxe para mudanças em arquivos Markdown
+
+# Define o comportamento de arquivos PAWN
+*.pwn text eol=lf # usa LF como quebra de linha para compatibilidade com Unix/Linux
+*.inc text eol=lf # também aplica a configuração para arquivos de inclusão do PAWN (.inc)
+
+# Opcional: Força o Git a tratar arquivos PAWN e Markdown como texto para evitar conversões indesejadas
+*.pwn diff # permite ver as diferenças em arquivos PAWN no Git
+*.inc diff # habilita a exibição de diferenças para arquivos de inclusão PAWN
