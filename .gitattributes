@@ -9,3 +9,13 @@
 # Opcional: Força o Git a tratar arquivos PAWN e Markdown como texto para evitar conversões indesejadas
 *.pwn diff # permite ver as diferenças em arquivos PAWN no Git
 *.inc diff # habilita a exibição de diferenças para arquivos de inclusão PAWN
+
+# Linguagem principal como PAWN
+*.pwn linguist-language=PAWN
+*.inc linguist-language=PAWN
+
+# Linguagem secundária para documentação
+*.md linguist-documentation
+
+# Ignorar arquivos de bibliotecas ou scripts externos
+vendor/** linguist-vendored
